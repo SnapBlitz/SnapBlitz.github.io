@@ -1,66 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snap Blitz</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0d0d0d;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .logo {
-            width: 150px;
-            height: 150px;
-            background-color: #222;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            background-size: cover;
-            background-position: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .icons {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .icons a {
-            color: white;
-            font-size: 2em;
-            text-decoration: none;
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snap Blitz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      background-color: #222;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      background-image: url('assets/logo.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-
-    <!-- Logo Placeholder -->
-    <div class="logo" id="logo"></div>
-
-    <!-- Name -->
-    <h1>Snap Blitz</h1>
-
-    <!-- Social Media Icons -->
-    <div class="icons">
-        <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/snap_blitz?igsh=MXc4cGRqdWR3b2g4OA==" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/adithyan-m-content-creator?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://t.me/SnapBlitz" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="https://wa.me/918075294328" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
+  <div class="logo"></div>
+  <h1>Snap Blitz</h1>
+  <div class="icons">
+    <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank"><img class="icon" src="assets/youtube.png" alt="YouTube" /></a>
+    <a href="https://www.instagram.com/snap_blitz" target="_blank"><img class="icon" src="assets/instagram.png" alt="Instagram" /></a>
+    <a href="https://t.me/SnapBlitz" target="_blank"><img class="icon" src="assets/telegram.png" alt="Telegram" /></a>
+    <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank"><img class="icon" src="assets/linkedin.png" alt="LinkedIn" /></a>
+    <a href="https://wa.me/918075294328" target="_blank"><img class="icon" src="assets/whatsapp.png" alt="WhatsApp" /></a>
+  </div>
 </body>
 </html>
