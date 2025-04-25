@@ -27,7 +27,7 @@
       background-size: cover;
       background-position: center;
       border-radius: 50%;
-      margin-bottom: 10px;
+      margin-top: 30px; /* Space from the top */
     }
 
     /* Channel Name Style */
@@ -40,14 +40,14 @@
     .icons {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 20px; /* Adjust gap between icons */
       flex-wrap: wrap;
-      margin-bottom: 30px; /* Space between icons and button */
+      margin: 20px 0; /* Space between icons and button */
     }
 
     .icon {
-      width: 40px;
-      height: 40px;
+      width: 30px; /* Smaller icon size */
+      height: 30px;
       transition: transform 0.3s ease;
     }
 
@@ -62,22 +62,15 @@
       font-size: 1.2rem;
       padding: 15px 30px;
       margin: 20px;
-      border: 2px solid white; /* Thin white border */
+      border: 2px solid white; /* White border */
+      border-radius: 25px; /* Smooth, rounded corners */
       cursor: pointer;
+      font-weight: bold; /* Bold text */
       transition: background-color 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
     }
 
     .button:hover {
       background-color: #222;
-    }
-
-    .button img {
-      width: 30px;
-      height: 30px;
     }
 
     /* Spacer Between Sections */
@@ -109,12 +102,8 @@
     </a>
   </div>
 
-  <!-- Spacer Between Top Section and Button Section -->
-  <div class="section-spacer"></div>
-
   <!-- Button to go to the "Editing Apps" page -->
   <button class="button" onclick="window.location.href='editing-apps.html'">
-    <img src="assets/editing-icon.png" alt="Editing Apps" />
     Editing Apps
   </button>
 
