@@ -17,29 +17,22 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      overflow: hidden;
     }
 
     .logo {
       width: 150px;
       height: 150px;
-      background-color: #222;
-      border-radius: 50%;
-      border-bottom: 5px solid yellow;
-      margin-bottom: 20px;
       background-image: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png');
       background-size: cover;
       background-position: center;
-      opacity: 0;
-      animation: glitchLogo 1.5s ease forwards;
+      border-radius: 50%;
+      margin-bottom: 10px; /* Reduced spacing between logo and text */
+      border: none; /* Removed yellow shadow/border */
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      opacity: 0;
-      animation: glitchText 1.5s ease forwards;
-      animation-delay: 0.5s;
+      font-size: 2.2rem;
+      margin: 0 0 20px 0;
     }
 
     .icons {
@@ -47,9 +40,6 @@
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
-      opacity: 0;
-      animation: iconsFade 1s ease forwards;
-      animation-delay: 2s;
     }
 
     .icon {
@@ -60,31 +50,6 @@
 
     .icon:hover {
       transform: scale(1.2);
-    }
-
-    /* Animations */
-    @keyframes glitchLogo {
-      0% { transform: scale(1) translate(0, 0); opacity: 0; }
-      10% { transform: scale(1.05) translate(-2px, 2px); opacity: 0.3; }
-      20% { transform: scale(0.95) translate(2px, -2px); }
-      30% { transform: scale(1.05) translate(-1px, 1px); }
-      40% { transform: scale(0.98) translate(1px, -1px); }
-      50% { opacity: 1; transform: scale(1) translate(0, 0); }
-      100% { transform: none; opacity: 1; }
-    }
-
-    @keyframes glitchText {
-      0% { opacity: 0; transform: translateX(0); }
-      10% { transform: translateX(-2px); }
-      20% { transform: translateX(2px); }
-      30% { transform: translateX(-1px); }
-      40% { transform: translateX(1px); }
-      50% { opacity: 1; transform: translateX(0); }
-      100% { opacity: 1; }
-    }
-
-    @keyframes iconsFade {
-      to { opacity: 1; }
     }
   </style>
 </head>
