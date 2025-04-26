@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #000; /* Background stays fully black */
+      background-color: #000;
       color: white;
       font-family: 'Arial', sans-serif;
       text-align: center;
@@ -18,9 +18,12 @@
       height: 100vh;
     }
 
-    /* Button Styling */
+    /* Button Container */
     .app-button {
-      background-color: #333; /* Grey color inside buttons */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #333; /* Grey background inside button */
       color: white;
       font-size: 1rem;
       padding: 12px 25px;
@@ -40,11 +43,23 @@
       transform: scale(1.05);
     }
 
+    /* Small Icon Next to Button */
+    .app-logo {
+      width: 24px; /* Small size */
+      height: 24px;
+      margin-right: 10px;
+    }
+
     /* Responsive Adjustments */
     @media (max-width: 600px) {
       .app-button {
         font-size: 0.9rem;
         padding: 10px 20px;
+      }
+
+      .app-logo {
+        width: 20px;
+        height: 20px;
       }
     }
   </style>
@@ -53,10 +68,25 @@
 
   <!-- Editing Apps Section -->
   <div>
-    <button class="app-button" onclick="window.location.href='https://www.capcut.com'">CapCut</button>
-    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">Lightroom</button>
-    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">Alight Motion</button>
-    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">PicsArt</button>
+    <button class="app-button" onclick="window.location.href='https://www.capcut.com'">
+      <img class="app-logo" src="assets/capcut.png" alt="CapCut Logo">
+      CapCut
+    </button>
+
+    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">
+      <img class="app-logo" src="assets/lightroom.png" alt="Lightroom Logo">
+      Lightroom
+    </button>
+
+    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">
+      <img class="app-logo" src="assets/alightmotion.png" alt="Alight Motion Logo">
+      Alight Motion
+    </button>
+
+    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">
+      <img class="app-logo" src="assets/picsart.png" alt="PicsArt Logo">
+      PicsArt
+    </button>
   </div>
 
 </body>
