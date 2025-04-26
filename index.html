@@ -28,7 +28,26 @@
       border-radius: 50%;
     }
 
-    /* Button Styling */
+    /* Social Media Icons */
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px; /* Space between logo and icons */
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
+
+    /* Button */
     .button {
       background-color: #333; /* Grey inside button */
       color: white;
@@ -43,13 +62,13 @@
       max-width: 300px;
       text-align: center;
       white-space: nowrap; /* Ensures text stays in one line */
+      margin-top: 30px; /* Adds space below the icons */
     }
 
     .button:hover {
       background-color: #444;
       transform: scale(1.05);
     }
-
   </style>
 </head>
 <body>
@@ -57,6 +76,26 @@
   <div class="logo"></div>
   <h1>Snap Blitz</h1>
 
+  <!-- Social Icons Section -->
+  <div class="icons">
+    <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+      <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
+    </a>
+    <a href="https://www.instagram.com/snap_blitz" target="_blank">
+      <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
+    </a>
+    <a href="https://t.me/SnapBlitz" target="_blank">
+      <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
+    </a>
+    <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+      <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+    </a>
+    <a href="https://wa.me/918075294328" target="_blank">
+      <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <!-- Editing Apps Button -->
   <button class="button" onclick="window.location.href='editing-apps.html'">
     Editing Apps
   </button>
