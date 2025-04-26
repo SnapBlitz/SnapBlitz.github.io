@@ -18,23 +18,23 @@
             height: 100vh;
         }
 
-        /* Universal Button Styling (Exactly Matches Homepage) */
+        /* Slim Button Styling (Exactly Matches Homepage) */
         .app-button {
             display: flex;
             align-items: center;
             justify-content: flex-start; /* Aligns logo and text horizontally */
             background-color: #333; /* Grey background inside button */
             color: white;
-            font-size: 1.2rem; /* Adjusted text size */
-            padding: 20px 40px; /* Increased padding for larger buttons */
-            margin: 18px; /* Space between buttons */
+            font-size: 1.1rem; /* Adjusted text size */
+            padding: 12px 25px; /* Slimmed down padding */
+            margin: 12px; /* Space between buttons */
             border: 2px solid white;
             border-radius: 25px;
             cursor: pointer;
             font-weight: bold;
             transition: background-color 0.3s, transform 0.2s;
-            width: 85%; /* Matches homepage button width */
-            max-width: 350px; /* Ensures perfect consistency */
+            width: 80%; /* Matches homepage button width */
+            max-width: 300px; /* Slimmer max width */
             text-align: left; /* Aligns text neatly */
             white-space: nowrap; /* Ensures text stays in one line */
         }
@@ -44,11 +44,11 @@
             transform: scale(1.05); /* Smooth hover effect */
         }
 
-        /* App Logo Styling (Slightly Bigger for Better Visibility) */
+        /* App Logo Styling (Balanced Size for Visibility) */
         .app-logo {
-            width: 70px; /* Increased logo size */
-            height: 70px;
-            margin-right: 18px; /* Space between logo and text */
+            width: 50px; /* Slightly smaller than last version */
+            height: 50px;
+            margin-right: 12px; /* Space between logo and text */
             object-fit: contain; /* Ensures proper scaling */
         }
 
@@ -56,12 +56,12 @@
         @media (max-width: 600px) {
             .app-button {
                 font-size: 1rem; /* Adjusted font for smaller screens */
-                padding: 16px 30px; /* Adjusted button size */
+                padding: 10px 20px; /* Adjusted button size */
             }
 
             .app-logo {
-                width: 60px; /* Resize logo for mobile */
-                height: 60px;
+                width: 45px; /* Resize logo for mobile */
+                height: 45px;
             }
         }
     </style>
