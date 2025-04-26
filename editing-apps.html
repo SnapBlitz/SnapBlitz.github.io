@@ -18,75 +18,113 @@
             height: 100vh;
         }
 
-        /* Slim Button Styling (Exactly Matches Homepage) */
-        .app-button {
+        /* Logo */
+        .logo {
+            width: 140px;
+            height: 140px;
+            background-image: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-top: 25px; /* Matches homepage layout */
+        }
+
+        /* Title */
+        h1 {
+            font-size: 2rem;
+            margin-top: 15px; /* Keeps spacing intact */
+        }
+
+        /* Social Media Icons */
+        .icons {
             display: flex;
-            align-items: center;
-            justify-content: flex-start; /* Aligns logo and text horizontally */
-            background-color: #333; /* Grey background inside button */
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        /* Universal Button Styling */
+        .app-button {
+            background-color: #333; /* Grey inside button */
             color: white;
-            font-size: 1.1rem; /* Adjusted text size */
-            padding: 10px 30px; /* Slimmer padding */
-            margin: 12px; /* Space between buttons */
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            margin: 15px; /* Space between buttons */
             border: 2px solid white;
             border-radius: 25px;
             cursor: pointer;
             font-weight: bold;
             transition: background-color 0.3s, transform 0.2s;
             width: 90%; /* Matches homepage button width */
-            max-width: 380px; /* Ensures consistency */
-            text-align: left; /* Aligns text neatly */
-            white-space: nowrap; /* Ensures text stays in one line */
+            max-width: 380px; /* Ensures correct alignment */
+            text-align: center;
+            white-space: nowrap; /* Keeps text on one line */
         }
 
         .app-button:hover {
             background-color: #444;
-            transform: scale(1.05); /* Smooth hover effect */
-        }
-
-        /* Adjusted Logo Size (Smaller but Clear) */
-        .app-logo {
-            width: 35px; /* Smaller size for balanced buttons */
-            height: 35px;
-            margin-right: 12px; /* Space between logo and text */
-            object-fit: contain; /* Ensures proper scaling */
+            transform: scale(1.05);
         }
 
         /* Responsive Adjustments */
         @media (max-width: 600px) {
             .app-button {
-                font-size: 1rem; /* Adjusted font for smaller screens */
-                padding: 8px 25px; /* Slimmer button size */
-            }
-
-            .app-logo {
-                width: 30px; /* Resize logo for mobile */
-                height: 30px;
+                font-size: 1rem;
+                padding: 10px 25px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Editing Apps Section -->
-    <div>
+    <div class="logo"></div>
+    <h1>Snap Blitz</h1>
+
+    <!-- Social Icons Section (Same as Homepage) -->
+    <div class="icons">
+        <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+            <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
+        </a>
+        <a href="https://www.instagram.com/snap_blitz" target="_blank">
+            <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
+        </a>
+        <a href="https://t.me/SnapBlitz" target="_blank">
+            <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
+        </a>
+        <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+            <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+        </a>
+        <a href="https://wa.me/918075294328" target="_blank">
+            <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+        </a>
+    </div>
+
+    <!-- Editing Apps Buttons (Now Below Logo & Icons) -->
+    <div class="app-container">
         <button class="app-button" onclick="window.location.href='https://www.capcut.com'">
-            <img class="app-logo" src="assets/capcut.png" alt="CapCut Logo">
             CapCut
         </button>
 
-        <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">
-            <img class="app-logo" src="assets/lightroom.png" alt="Lightroom Logo">
+        <button class="app-button" onclick="window.location.href='https://www.adobe.com/products/photoshop-lightroom.html'">
             Lightroom
         </button>
 
-        <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">
-            <img class="app-logo" src="assets/alightmotion.png" alt="Alight Motion Logo">
+        <button class="app-button" onclick="window.location.href='https://alightcreative.com/'">
             Alight Motion
         </button>
 
-        <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">
-            <img class="app-logo" src="assets/picsart.png" alt="PicsArt Logo">
+        <button class="app-button" onclick="window.location.href='https://www.picsart.com/'">
             PicsArt
         </button>
     </div>
