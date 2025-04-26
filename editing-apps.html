@@ -18,23 +18,23 @@
             height: 100vh;
         }
 
-        /* Corrected Button Styling (Matching Homepage) */
+        /* Slim Button Styling (Exactly Matches Homepage) */
         .app-button {
             display: flex;
             align-items: center;
             justify-content: flex-start; /* Aligns logo and text horizontally */
             background-color: #333; /* Grey background inside button */
             color: white;
-            font-size: 1.2rem; /* Adjusted text size */
-            padding: 12px 25px; /* Slim but properly spaced */
+            font-size: 1.1rem; /* Adjusted text size */
+            padding: 10px 30px; /* Slimmer padding */
             margin: 12px; /* Space between buttons */
             border: 2px solid white;
             border-radius: 25px;
             cursor: pointer;
             font-weight: bold;
             transition: background-color 0.3s, transform 0.2s;
-            width: 85%; /* Increased width to match homepage button */
-            max-width: 350px; /* Ensures consistency */
+            width: 90%; /* Matches homepage button width */
+            max-width: 380px; /* Ensures consistency */
             text-align: left; /* Aligns text neatly */
             white-space: nowrap; /* Ensures text stays in one line */
         }
@@ -44,11 +44,11 @@
             transform: scale(1.05); /* Smooth hover effect */
         }
 
-        /* Corrected Logo Styling (Aligned & Resized) */
+        /* Adjusted Logo Size (Smaller but Clear) */
         .app-logo {
-            width: 60px; /* Balanced size */
-            height: 60px;
-            margin-right: 15px; /* Space between logo and text */
+            width: 35px; /* Smaller size for balanced buttons */
+            height: 35px;
+            margin-right: 12px; /* Space between logo and text */
             object-fit: contain; /* Ensures proper scaling */
         }
 
@@ -56,12 +56,12 @@
         @media (max-width: 600px) {
             .app-button {
                 font-size: 1rem; /* Adjusted font for smaller screens */
-                padding: 10px 20px; /* Adjusted button size */
+                padding: 8px 25px; /* Slimmer button size */
             }
 
             .app-logo {
-                width: 50px; /* Resize logo for mobile */
-                height: 50px;
+                width: 30px; /* Resize logo for mobile */
+                height: 30px;
             }
         }
     </style>
