@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      background-color: #000; /* Black background */
       color: white;
       font-family: 'Arial', sans-serif;
       text-align: center;
@@ -18,48 +18,50 @@
       height: 100vh;
     }
 
-    /* Button Container */
+    /* Container for Buttons */
     .app-button {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* Aligns text and logo horizontally */
       background-color: #333; /* Grey background inside button */
       color: white;
       font-size: 1rem;
-      padding: 12px 25px;
-      margin: 12px;
+      padding: 12px 20px;
+      margin: 10px;
       border: 2px solid white;
       border-radius: 25px;
       cursor: pointer;
       font-weight: bold;
       transition: background-color 0.3s, transform 0.2s;
-      width: 80%;
-      max-width: 300px;
-      text-align: center;
+      width: 80%; /* Button width */
+      max-width: 300px; /* Ensures consistency */
+      text-align: left; /* Aligns text within the button */
+      white-space: nowrap; /* Ensures text stays in a single line */
     }
 
     .app-button:hover {
       background-color: #444;
-      transform: scale(1.05);
+      transform: scale(1.05); /* Smooth hover effect */
     }
 
-    /* Small Icon Next to Button */
+    /* App Logo Styling */
     .app-logo {
-      width: 24px; /* Small size */
-      height: 24px;
-      margin-right: 10px;
+      width: 30px; /* Dynamically scaled size */
+      height: 30px; 
+      margin-right: 10px; /* Space between logo and text */
+      object-fit: contain; /* Ensures proper scaling */
     }
 
     /* Responsive Adjustments */
     @media (max-width: 600px) {
       .app-button {
-        font-size: 0.9rem;
-        padding: 10px 20px;
+        font-size: 0.9rem; /* Smaller font for mobile */
+        padding: 10px 15px;
       }
 
       .app-logo {
-        width: 20px;
-        height: 20px;
+        width: 24px; /* Resize logo on mobile */
+        height: 24px;
       }
     }
   </style>
