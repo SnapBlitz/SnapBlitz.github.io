@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #111;
+      background-color: #000; /* Background stays fully black */
       color: white;
       font-family: 'Arial', sans-serif;
       text-align: center;
@@ -18,22 +18,13 @@
       height: 100vh;
     }
 
-    /* Editing Apps Section */
-    .editing-apps {
-      width: 90%;
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #222;
-      border-radius: 15px;
-      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-    }
-
-    /* Buttons */
+    /* Button Styling */
     .app-button {
-      background-color: #333;
+      background-color: #333; /* Grey color inside buttons */
       color: white;
       font-size: 1rem;
       padding: 12px 25px;
+      margin: 12px;
       border: 2px solid white;
       border-radius: 25px;
       cursor: pointer;
@@ -48,11 +39,20 @@
       background-color: #444;
       transform: scale(1.05);
     }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .app-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="editing-apps">
+  <!-- Editing Apps Section -->
+  <div>
     <button class="app-button" onclick="window.location.href='https://www.capcut.com'">CapCut</button>
     <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">Lightroom</button>
     <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">Alight Motion</button>
