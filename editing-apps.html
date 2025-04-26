@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Snap Blitz</title>
+  <title>Editing Apps | Snap Blitz</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      background-color: #111;
       color: white;
       font-family: 'Arial', sans-serif;
       text-align: center;
@@ -18,18 +18,18 @@
       height: 100vh;
     }
 
-    /* Logo */
-    .logo {
-      width: 140px;
-      height: 140px;
-      background-image: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png');
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
+    /* Editing Apps Section */
+    .editing-apps {
+      width: 90%;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #222;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
     }
 
-    /* Button */
-    .button {
+    /* Buttons */
+    .app-button {
       background-color: #333;
       color: white;
       font-size: 1rem;
@@ -44,7 +44,7 @@
       text-align: center;
     }
 
-    .button:hover {
+    .app-button:hover {
       background-color: #444;
       transform: scale(1.05);
     }
@@ -52,12 +52,12 @@
 </head>
 <body>
 
-  <div class="logo"></div>
-  <h1>Snap Blitz</h1>
-
-  <button class="button" onclick="window.location.href='editing-apps.html'">
-    Editing Apps
-  </button>
+  <div class="editing-apps">
+    <button class="app-button" onclick="window.location.href='https://www.capcut.com'">CapCut</button>
+    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">Lightroom</button>
+    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">Alight Motion</button>
+    <button class="app-button" onclick="window.location.href='<!-- Your Link Here -->'">PicsArt</button>
+  </div>
 
 </body>
 </html>
