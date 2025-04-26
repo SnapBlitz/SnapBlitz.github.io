@@ -14,25 +14,32 @@
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
+    /* Top Section */
+    .top-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+
     /* Logo Style */
     .logo {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       background-image: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png');
       background-size: cover;
       background-position: center;
       border-radius: 50%;
-      margin-top: 30px; /* Space from the top */
     }
 
     /* Channel Name Style */
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin: 10px 0;
     }
 
@@ -40,13 +47,13 @@
     .icons {
       display: flex;
       justify-content: center;
-      gap: 20px; /* Adjust gap between icons */
+      gap: 15px;
       flex-wrap: wrap;
-      margin: 20px 0; /* Space between icons and button */
+      margin-top: 10px;
     }
 
     .icon {
-      width: 30px; /* Smaller icon size */
+      width: 30px;
       height: 30px;
       transition: transform 0.3s ease;
     }
@@ -55,57 +62,79 @@
       transform: scale(1.2);
     }
 
-    /* Button Style (Editing App Button) */
+    /* Buttons Section */
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
     .button {
-      background-color: #000;
+      background-color: #222;
       color: white;
-      font-size: 1.2rem;
-      padding: 15px 30px;
-      margin: 20px;
-      border: 2px solid white; /* White border */
-      border-radius: 25px; /* Smooth, rounded corners */
+      font-size: 1rem;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 25px;
       cursor: pointer;
-      font-weight: bold; /* Bold text */
+      font-weight: bold;
       transition: background-color 0.3s;
+      width: 80%;
+      max-width: 300px;
     }
 
     .button:hover {
-      background-color: #222;
+      background-color: #444;
     }
 
-    /* Spacer Between Sections */
-    .section-spacer {
-      margin-top: 50px; /* Space between sections */
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+      .button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Section: Logo, Channel Name, and Icons -->
-  <div class="logo"></div>
-  <h1>Snap Blitz</h1>
-  <div class="icons">
-    <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
-      <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
-    </a>
-    <a href="https://www.instagram.com/snap_blitz" target="_blank">
-      <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
-    </a>
-    <a href="https://t.me/SnapBlitz" target="_blank">
-      <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
-    </a>
-    <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
-      <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
-    </a>
-    <a href="https://wa.me/918075294328" target="_blank">
-      <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
-    </a>
+  <!-- Top Section -->
+  <div class="top-section">
+    <div class="logo"></div>
+    <h1>Snap Blitz</h1>
+    <div class="icons">
+      <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+        <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/snap_blitz" target="_blank">
+        <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
+      </a>
+      <a href="https://t.me/SnapBlitz" target="_blank">
+        <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
+      </a>
+      <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+        <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+      </a>
+      <a href="https://wa.me/918075294328" target="_blank">
+        <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+      </a>
+    </div>
   </div>
 
-  <!-- Button to go to the "Editing Apps" page -->
-  <button class="button" onclick="window.location.href='editing-apps.html'">
-    Editing Apps
-  </button>
+  <!-- Buttons Section -->
+  <div class="buttons-container">
+    <button class="button" onclick="window.location.href='editing-apps.html'">
+      Editing Apps
+    </button>
+  </div>
 
 </body>
 </html>
