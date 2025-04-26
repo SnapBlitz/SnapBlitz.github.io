@@ -56,6 +56,9 @@
 
         /* Universal Button Styling */
         .app-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Logo & text aligned horizontally */
             background-color: #333; /* Grey inside button */
             color: white;
             font-size: 1.2rem;
@@ -68,7 +71,7 @@
             transition: background-color 0.3s, transform 0.2s;
             width: 90%; /* Matches homepage button width */
             max-width: 380px; /* Ensures correct alignment */
-            text-align: center;
+            text-align: left;
             white-space: nowrap; /* Keeps text on one line */
         }
 
@@ -77,11 +80,24 @@
             transform: scale(1.05);
         }
 
+        /* App Logo Styling */
+        .app-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px; /* Space between logo and text */
+            object-fit: contain; /* Ensures proper scaling */
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 600px) {
             .app-button {
                 font-size: 1rem;
                 padding: 10px 25px;
+            }
+
+            .app-logo {
+                width: 35px;
+                height: 35px;
             }
         }
     </style>
@@ -110,21 +126,25 @@
         </a>
     </div>
 
-    <!-- Editing Apps Buttons (Now Below Logo & Icons) -->
+    <!-- Editing Apps Buttons with Logos -->
     <div class="app-container">
         <button class="app-button" onclick="window.location.href='https://www.capcut.com'">
+            <img class="app-logo" src="assets/capcut.png" alt="CapCut Logo">
             CapCut
         </button>
 
         <button class="app-button" onclick="window.location.href='https://www.adobe.com/products/photoshop-lightroom.html'">
+            <img class="app-logo" src="assets/lightroom.png" alt="Lightroom Logo">
             Lightroom
         </button>
 
         <button class="app-button" onclick="window.location.href='https://alightcreative.com/'">
+            <img class="app-logo" src="assets/alightmotion.png" alt="Alight Motion Logo">
             Alight Motion
         </button>
 
         <button class="app-button" onclick="window.location.href='https://www.picsart.com/'">
+            <img class="app-logo" src="assets/picsart.png" alt="PicsArt Logo">
             PicsArt
         </button>
     </div>
