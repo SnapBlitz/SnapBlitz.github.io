@@ -18,7 +18,7 @@
       height: 100vh;
     }
 
-    /* Logo */
+    /* Logo - Adjusted Positioning */
     .logo {
       width: 140px;
       height: 140px;
@@ -26,6 +26,13 @@
       background-size: cover;
       background-position: center;
       border-radius: 50%;
+      margin-top: 25px; /* Pushes logo down slightly to avoid touching search bar */
+    }
+
+    /* Title - Reduced Space Below Logo */
+    h1 {
+      font-size: 2rem;
+      margin-top: 15px; /* Reducing gap between logo and text */
     }
 
     /* Social Media Icons */
@@ -34,7 +41,7 @@
       justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
-      margin-top: 15px; /* Space between logo and icons */
+      margin-top: 10px;
     }
 
     .icon {
@@ -62,7 +69,7 @@
       max-width: 300px;
       text-align: center;
       white-space: nowrap; /* Ensures text stays in one line */
-      margin-top: 30px; /* Adds space below the icons */
+      margin-top: 30px; /* Adds space below icons */
     }
 
     .button:hover {
