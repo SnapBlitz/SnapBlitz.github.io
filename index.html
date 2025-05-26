@@ -1,77 +1,121 @@
-<style>
-  :root {
-    --btn-max-width: 600px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snap Blitz</title>
+  <style>
+    :root {
+      --btn-max-width: 500px;
+    }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    overflow-x: hidden;
-  }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Prevent sideways scroll */
+    }
 
-  .wrapper {
-    max-width: var(--btn-max-width);
-    margin: 0 auto;
-    padding: 0 16px;
-    width: 100%;
-  }
+    .wrapper {
+      width: 100%;
+      max-width: var(--btn-max-width);
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .logo {
-    width: 140px;
-    height: 140px;
-    background: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png')
-      center / cover no-repeat;
-    border-radius: 50%;
-    margin: 25px auto 0;
-  }
+    .logo {
+      width: 140px;
+      height: 140px;
+      background: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png') center / cover no-repeat;
+      border-radius: 50%;
+      margin-top: 25px;
+    }
 
-  h1 {
-    font-size: 2rem;
-    margin: 15px 0 0;
-  }
+    h1 {
+      font-size: 2rem;
+      margin: 15px 0;
+      text-align: center;
+    }
 
-  .icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-  }
+    .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
 
-  .icon {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-  }
+    .icon {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
 
-  .icon:hover {
-    transform: scale(1.2);
-  }
+    .icon:hover {
+      transform: scale(1.2);
+    }
 
-  .app-button {
-    display: block;
-    margin: 16px auto; /* <-- FORCES TRUE CENTER */
-    width: 95%;         /* Slightly smaller than 100% to avoid overflow */
-    max-width: 600px;
-    padding: 14px 20px;
-    background: #333;
-    border: 2px solid #fff;
-    border-radius: 18px;
-    color: #fff;
-    font-size: 1.05rem;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-  }
+    .app-button {
+      display: block;
+      width: 90%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 16px;
+      background: #333;
+      border: 2px solid #fff;
+      border-radius: 18px;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
 
-  .app-button:hover {
-    background: #444;
-    transform: scale(1.02);
-  }
-</style>
+    .app-button:hover {
+      background: #444;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo"></div>
+    <h1>Snap Blitz</h1>
+
+    <div class="icons">
+      <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+        <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/snap_blitz" target="_blank">
+        <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
+      </a>
+      <a href="https://t.me/SnapBlitz" target="_blank">
+        <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
+      </a>
+      <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+        <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+      </a>
+      <a href="https://wa.me/918075294328" target="_blank">
+        <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <!-- Final Aligned Button -->
+    <button class="app-button" onclick="location.href='editing/index.html'">
+      Editing
+    </button>
+  </div>
+
+  <!-- Minimal JavaScript only if needed -->
+  <script>
+    // No JS needed for this version
+  </script>
+</body>
+</html>
