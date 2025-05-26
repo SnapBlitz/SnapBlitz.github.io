@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing - Snap Blitz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            background-image: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-top: 25px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 15px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .app-button {
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 80%;
+            max-width: 300px;
+            text-align: center;
+            white-space: nowrap;
+            margin-top: 30px;
+        }
+
+        .app-button:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo"></div>
+    <h1>Snap Blitz</h1>
+
+    <!-- Social Icons Section -->
+    <div class="icons">
+        <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+            <img class="icon" src="../assets/YouTube icon PNG.png" alt="YouTube" />
+        </a>
+        <a href="https://www.instagram.com/snap_blitz" target="_blank">
+            <img class="icon" src="../assets/Instagram icon PNG.png" alt="Instagram" />
+        </a>
+        <a href="https://t.me/SnapBlitz" target="_blank">
+            <img class="icon" src="../assets/Telegram icon PNG.png" alt="Telegram" />
+        </a>
+        <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+            <img class="icon" src="../assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+        </a>
+        <a href="https://wa.me/918075294328" target="_blank">
+            <img class="icon" src="../assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+        </a>
+    </div>
+
+    <!-- Only one button for this page -->
+    <div class="app-container">
+        <button class="app-button" onclick="window.location.href='app.html'">
+            App
+        </button>
+    </div>
+
+</body>
+</html>
