@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snap Blitz</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snap Blitz</title>
+  <style>
+    /* ---------- GLOBAL LAYOUT ---------- */
+    :root {
+      --btn-max-width: 600px;   /* tweak if you ever want narrower/wider */
+    }
 
-        .logo {
-            width: 140px;
-            height: 140px;
-            background-image: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png');
-            background-size: cover;
-            background-position: center;
-            border-radius: 50%;
-            margin-top: 25px;
-        }
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-        h1 {
-            font-size: 2rem;
-            margin-top: 15px;
-        }
+    /* Wrap everything so we can center it but keep content near the top */
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: var(--btn-max-width);
+      margin: 0 auto;
+      padding: 0 12px;          /* small side padding on mobile */
+    }
 
-        .icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
+    /* ---------- TOP SECTION (unchanged) ---------- */
+    .logo {
+      width: 140px;
+      height: 140px;
+      background: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png')
+                  center / cover no-repeat;
+      border-radius: 50%;
+      margin-top: 25px;
+    }
 
-        .icon {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s ease;
-        }
+    h1 {
+      font-size: 2rem;
+      margin: 15px 0 0;
+    }
 
-        .icon:hover {
-            transform: scale(1.2);
-        }
+    .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
 
-        .app-button {
-            background-color: #333;
-            color: white;
-            font-size: 1rem;
-            padding: 12px 25px;
-            border: 2px solid white;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.2s;
-            width: 80%;
-            max-width: 300px;
-            text-align: center;
-            white-space: nowrap;
-            margin-top: 30px;
-        }
+    .icon {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+    .icon:hover { transform: scale(1.2); }
 
-        .app-button:hover {
-            background-color: #444;
-            transform: scale(1.05);
-        }
-    </style>
+    /* ---------- UNIVERSAL BUTTON STYLE ---------- */
+    .app-button {
+      /* size & spacing */
+      width: 100%;
+      max-width: var(--btn-max-width);
+      padding: 18px 20px;        /* taller tap-area */
+      margin: 14px 0;            /* gap between buttons */
+
+      /* look & feel (keep it dark/clean) */
+      background: #333;
+      border: 2px solid #fff;
+      border-radius: 18px;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: bold;
+      text-align: left;          /* left-aligned label leaves room for an icon/GIF */
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .app-button:hover {
+      background: #444;
+      transform: scale(1.02);
+    }
+  </style>
 </head>
 <body>
-
+  <div class="wrapper">
+    <!-- ---------- TOP SECTION ---------- -->
     <div class="logo"></div>
     <h1>Snap Blitz</h1>
 
-    <!-- Social Icons Section -->
     <div class="icons">
-        <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
-            <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
-        </a>
-        <a href="https://www.instagram.com/snap_blitz" target="_blank">
-            <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
-        </a>
-        <a href="https://t.me/SnapBlitz" target="_blank">
-            <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
-        </a>
-        <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
-            <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
-        </a>
-        <a href="https://wa.me/918075294328" target="_blank">
-            <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
-        </a>
+      <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+        <img class="icon" src="assets/YouTube icon PNG.png" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/snap_blitz" target="_blank">
+        <img class="icon" src="assets/Instagram icon PNG.png" alt="Instagram" />
+      </a>
+      <a href="https://t.me/SnapBlitz" target="_blank">
+        <img class="icon" src="assets/Telegram icon PNG.png" alt="Telegram" />
+      </a>
+      <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+        <img class="icon" src="assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+      </a>
+      <a href="https://wa.me/918075294328" target="_blank">
+        <img class="icon" src="assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+      </a>
     </div>
 
-    <!-- Buttons Section -->
-    <div class="app-container">
-        <!-- Editing Button (New First Button) -->
-        <button class="app-button" onclick="window.location.href='editing/index.html'">
-            Editing
-        </button>
-
-        <!-- Game Button -->
-        <button class="app-button" onclick="window.location.href='game/index.html'">
-            Game
-        </button>
-
-        <!-- Tools Button -->
-        <button class="app-button" onclick="window.location.href='tools/index.html'">
-            Tools
-        </button>
-    </div>
-
+    <!-- ---------- BUTTONS SECTION ---------- -->
+    <!-- You can duplicate this <button> block to add more items later -->
+    <button class="app-button" onclick="location.href='editing/index.html'">
+      Editing
+    </button>
+  </div>
 </body>
 </html>
