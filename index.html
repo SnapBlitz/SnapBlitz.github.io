@@ -16,26 +16,24 @@
       color: #fff;
       font-family: Arial, sans-serif;
       text-align: center;
-      max-width: 100%;
       overflow-x: hidden;
-      touch-action: manipulation;
     }
 
     .wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
       max-width: var(--btn-max-width);
       margin: 0 auto;
-      padding: 0 12px;
+      padding: 0 16px;
+      width: 100%;
     }
 
     .logo {
       width: 140px;
       height: 140px;
       background: url('https://raw.githubusercontent.com/SnapBlitz/SnapBlitz.github.io/main/assets/Picsart_25-04-25_23-55-07-924.png')
-                  center / cover no-repeat;
+        center / cover no-repeat;
       border-radius: 50%;
       margin-top: 25px;
     }
@@ -64,21 +62,21 @@
     }
 
     .app-button {
+      display: block;
       width: 100%;
-      max-width: 360px; /* Keep the button from getting too wide */
-      padding: 14px 16px;
-      margin: 14px auto; /* Center it horizontally */
+      max-width: 100%;
+      padding: 14px 20px;
+      margin: 16px 0;
       background: #333;
       border: 2px solid #fff;
-      border-radius: 16px;
+      border-radius: 18px;
       color: #fff;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: bold;
       text-align: center;
       white-space: nowrap;
       cursor: pointer;
       transition: background 0.3s, transform 0.2s;
-      display: block;
     }
 
     .app-button:hover {
@@ -86,10 +84,10 @@
       transform: scale(1.02);
     }
 
-    @media (max-width: 480px) {
+    /* Desktop (wider screens): Restore full max width */
+    @media (min-width: 768px) {
       .app-button {
-        padding: 12px 14px;
-        font-size: 0.95rem;
+        max-width: var(--btn-max-width);
       }
     }
   </style>
@@ -117,7 +115,7 @@
       </a>
     </div>
 
-    <!-- FINAL CENTERED BUTTON -->
+    <!-- Correctly aligned, responsive button -->
     <button class="app-button" onclick="location.href='editing/index.html'">
       Editing
     </button>
