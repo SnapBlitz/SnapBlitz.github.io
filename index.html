@@ -64,15 +64,15 @@
     }
 
     .app-button {
-      width: 100%;
+      width: 90%;
       max-width: var(--btn-max-width);
-      padding: 18px 20px;
+      padding: 14px 16px; /* Reduced padding */
       margin: 14px 0;
       background: #333;
       border: 2px solid #fff;
-      border-radius: 18px;
+      border-radius: 16px; /* Slightly smaller radius */
       color: #fff;
-      font-size: 1.05rem;
+      font-size: 1rem; /* Slightly smaller font */
       font-weight: bold;
       text-align: center;
       white-space: nowrap;
@@ -83,6 +83,13 @@
     .app-button:hover {
       background: #444;
       transform: scale(1.02);
+    }
+
+    @media (max-width: 480px) {
+      .app-button {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -109,7 +116,7 @@
       </a>
     </div>
 
-    <!-- CENTERED TEXT BUTTON -->
+    <!-- UPDATED CENTERED BUTTON -->
     <button class="app-button" onclick="location.href='editing/index.html'">
       Editing
     </button>
