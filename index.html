@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #000; /* Black background */
+            background-color: #000;
             color: white;
             font-family: 'Arial', sans-serif;
             text-align: center;
@@ -18,7 +18,6 @@
             height: 100vh;
         }
 
-        /* Logo */
         .logo {
             width: 140px;
             height: 140px;
@@ -26,16 +25,14 @@
             background-size: cover;
             background-position: center;
             border-radius: 50%;
-            margin-top: 25px; /* Keeps correct spacing */
+            margin-top: 25px;
         }
 
-        /* Title */
         h1 {
             font-size: 2rem;
-            margin-top: 15px; /* Keeps spacing intact */
+            margin-top: 15px;
         }
 
-        /* Social Media Icons */
         .icons {
             display: flex;
             justify-content: center;
@@ -54,9 +51,8 @@
             transform: scale(1.2);
         }
 
-        /* Universal Button Styling */
         .app-button {
-            background-color: #333; /* Grey inside button */
+            background-color: #333;
             color: white;
             font-size: 1rem;
             padding: 12px 25px;
@@ -68,8 +64,8 @@
             width: 80%;
             max-width: 300px;
             text-align: center;
-            white-space: nowrap; /* Ensures text stays in one line */
-            margin-top: 30px; /* Keeps correct spacing */
+            white-space: nowrap;
+            margin-top: 30px;
         }
 
         .app-button:hover {
@@ -104,12 +100,17 @@
 
     <!-- Buttons Section -->
     <div class="app-container">
-        <!-- Game Button (Now First) -->
+        <!-- Editing Button (New First Button) -->
+        <button class="app-button" onclick="window.location.href='editing/index.html'">
+            Editing
+        </button>
+
+        <!-- Game Button -->
         <button class="app-button" onclick="window.location.href='game/index.html'">
             Game
         </button>
 
-        <!-- Tools Button (Now Second) -->
+        <!-- Tools Button -->
         <button class="app-button" onclick="window.location.href='tools/index.html'">
             Tools
         </button>
