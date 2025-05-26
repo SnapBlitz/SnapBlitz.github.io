@@ -1,1 +1,0 @@
-# SnapBlitz.github.io
