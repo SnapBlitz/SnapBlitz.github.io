@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snap Blitz</title>
   <style>
-    /* ---------- GLOBAL LAYOUT ---------- */
     :root {
-      --btn-max-width: 600px;   /* tweak if you ever want narrower/wider */
+      --btn-max-width: 600px;
     }
 
     body {
@@ -18,7 +17,6 @@
       text-align: center;
     }
 
-    /* Wrap everything so we can center it but keep content near the top */
     .wrapper {
       display: flex;
       flex-direction: column;
@@ -26,10 +24,9 @@
       width: 100%;
       max-width: var(--btn-max-width);
       margin: 0 auto;
-      padding: 0 12px;          /* small side padding on mobile */
+      padding: 0 12px;
     }
 
-    /* ---------- TOP SECTION (unchanged) ---------- */
     .logo {
       width: 140px;
       height: 140px;
@@ -57,28 +54,28 @@
       height: 30px;
       transition: transform 0.3s ease;
     }
-    .icon:hover { transform: scale(1.2); }
 
-    /* ---------- UNIVERSAL BUTTON STYLE ---------- */
+    .icon:hover {
+      transform: scale(1.2);
+    }
+
     .app-button {
-      /* size & spacing */
       width: 100%;
       max-width: var(--btn-max-width);
-      padding: 18px 20px;        /* taller tap-area */
-      margin: 14px 0;            /* gap between buttons */
-
-      /* look & feel (keep it dark/clean) */
+      padding: 18px 20px;
+      margin: 14px 0;
       background: #333;
       border: 2px solid #fff;
       border-radius: 18px;
       color: #fff;
       font-size: 1.05rem;
       font-weight: bold;
-      text-align: left;          /* left-aligned label leaves room for an icon/GIF */
+      text-align: center; /* <--- CENTER ALIGN FIX */
       white-space: nowrap;
       cursor: pointer;
       transition: background 0.3s, transform 0.2s;
     }
+
     .app-button:hover {
       background: #444;
       transform: scale(1.02);
@@ -87,7 +84,6 @@
 </head>
 <body>
   <div class="wrapper">
-    <!-- ---------- TOP SECTION ---------- -->
     <div class="logo"></div>
     <h1>Snap Blitz</h1>
 
@@ -109,8 +105,7 @@
       </a>
     </div>
 
-    <!-- ---------- BUTTONS SECTION ---------- -->
-    <!-- You can duplicate this <button> block to add more items later -->
+    <!-- CENTERED TEXT BUTTON -->
     <button class="app-button" onclick="location.href='editing/index.html'">
       Editing
     </button>
