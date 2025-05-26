@@ -13,9 +13,22 @@
       font-family: 'Arial', sans-serif;
       text-align: center;
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      padding-top: 25px;
+      overflow-x: hidden;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 500px;
+      padding: 0 16px;
+      display: flex;
       flex-direction: column;
       align-items: center;
-      height: 100vh;
+      text-align: center;
     }
 
     .logo {
@@ -25,93 +38,84 @@
       background-size: cover;
       background-position: center;
       border-radius: 50%;
-      margin-top: 25px;
+      margin-bottom: 15px;
     }
 
     h1 {
-      font-size: 2rem;
-      margin-top: 15px;
+      font-size: 2rem; /* 32px approx */
+      font-weight: normal;
+      margin-bottom: 10px;
     }
 
     .icons {
       display: flex;
       justify-content: center;
-      gap: 15px;
       flex-wrap: wrap;
-      margin-top: 10px;
+      gap: 15px;
+      margin-bottom: 20px;
     }
 
     .icon {
       width: 30px;
       height: 30px;
       transition: transform 0.3s ease;
+      cursor: pointer;
     }
 
     .icon:hover {
       transform: scale(1.2);
     }
 
-    .app-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px; /* MATCHING homepage layout */
-      width: 100%;
-    }
-
     .app-button {
+      display: block;
+      width: 100%; /* full width of container */
+      max-width: 100%;
+      margin: 12px 0;
+      padding: 16px 0;
       background-color: #333;
-      color: white;
-      font-size: 1rem;
-      padding: 12px 25px;
-      border: 2px solid white;
-      border-radius: 25px;
-      cursor: pointer;
+      border: 2px solid #fff;
+      border-radius: 18px;
+      color: #fff;
+      font-size: 1.05rem; /* ~17px */
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
-      width: 80%;
-      max-width: 300px;
       text-align: center;
       white-space: nowrap;
-      margin-top: 30px; /* EXACT spacing below icons */
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
     }
 
     .app-button:hover {
       background-color: #444;
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="logo"></div>
+    <h1>Snap Blitz</h1>
 
-  <div class="logo"></div>
-  <h1>Snap Blitz</h1>
+    <div class="icons">
+      <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
+        <img class="icon" src="../assets/YouTube icon PNG.png" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/snap_blitz" target="_blank">
+        <img class="icon" src="../assets/Instagram icon PNG.png" alt="Instagram" />
+      </a>
+      <a href="https://t.me/SnapBlitz" target="_blank">
+        <img class="icon" src="../assets/Telegram icon PNG.png" alt="Telegram" />
+      </a>
+      <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
+        <img class="icon" src="../assets/LinkedIn icon PNG.png" alt="LinkedIn" />
+      </a>
+      <a href="https://wa.me/918075294328" target="_blank">
+        <img class="icon" src="../assets/WhatsApp icon PNG.png" alt="WhatsApp" />
+      </a>
+    </div>
 
-  <!-- Social Icons Section -->
-  <div class="icons">
-    <a href="https://youtube.com/@snap_blitz?si=TWcf4ghgZHY4UcMZ" target="_blank">
-      <img class="icon" src="../assets/YouTube icon PNG.png" alt="YouTube" />
-    </a>
-    <a href="https://www.instagram.com/snap_blitz" target="_blank">
-      <img class="icon" src="../assets/Instagram icon PNG.png" alt="Instagram" />
-    </a>
-    <a href="https://t.me/SnapBlitz" target="_blank">
-      <img class="icon" src="../assets/Telegram icon PNG.png" alt="Telegram" />
-    </a>
-    <a href="https://www.linkedin.com/in/adithyan-m-content-creator" target="_blank">
-      <img class="icon" src="../assets/LinkedIn icon PNG.png" alt="LinkedIn" />
-    </a>
-    <a href="https://wa.me/918075294328" target="_blank">
-      <img class="icon" src="../assets/WhatsApp icon PNG.png" alt="WhatsApp" />
-    </a>
-  </div>
-
-  <!-- App Button Section -->
-  <div class="app-container">
     <button class="app-button" onclick="window.location.href='app.html'">
       App
     </button>
   </div>
-
 </body>
 </html>
