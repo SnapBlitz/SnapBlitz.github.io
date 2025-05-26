@@ -55,7 +55,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 30px;
+      margin-top: 10px; /* MATCHING homepage layout */
       width: 100%;
     }
 
@@ -73,17 +73,12 @@
       max-width: 300px;
       text-align: center;
       white-space: nowrap;
-      margin-top: 30px;
+      margin-top: 30px; /* EXACT spacing below icons */
     }
 
     .app-button:hover {
       background-color: #444;
       transform: scale(1.05);
-    }
-
-    /* Invisible placeholder buttons to maintain spacing */
-    .hidden-button {
-      visibility: hidden;
     }
   </style>
 </head>
@@ -111,18 +106,11 @@
     </a>
   </div>
 
-  <!-- Buttons Section -->
+  <!-- App Button Section -->
   <div class="app-container">
-    <!-- Invisible placeholders to match layout spacing -->
-    <button class="app-button hidden-button">Placeholder</button>
-
-    <!-- Actual App Button -->
     <button class="app-button" onclick="window.location.href='app.html'">
       App
     </button>
-
-    <!-- Invisible placeholders to match layout spacing -->
-    <button class="app-button hidden-button">Placeholder</button>
   </div>
 
 </body>
